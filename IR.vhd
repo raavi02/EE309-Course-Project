@@ -5,7 +5,7 @@ use work.all;
 
 entity IR is
 	port (Mem_d : IN STD_LOGIC_VECTOR(15 downto 0);
-				current_state : IN STD_LOGIC_VECTOR(5 downto 0);
+				current_state : IN STD_LOGIC_VECTOR(4 downto 0);
 
 				output : OUT STD_LOGIC_VECTOR(15 downto 0);
 				ir_write : OUT STD_LOGIC);
@@ -13,7 +13,7 @@ end IR;
 
 
 architecture beh of IR is
-  constant S1: STD_LOGIC_VECTOR(5 downto 0) := "000001";  
+  constant S1 : std_logic_vector(4 downto 0):= "00001";  
 
   begin
     process (current_state, Mem_d)
