@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity alu is
-port( alu_a, alu_b: in std_logic_vector(15 downto 0);
+port( pc_out, t0_out, t1_out,t2_out: in std_logic_vector(15 downto 0);
       alu_c: out std_logic_vector(15 downto 0);
 		carry_flag,zero_flag: out std_logic;
 	clk: in std_logic;
@@ -47,6 +47,7 @@ function add(A: in std_logic_vector(15 downto 0); B: in std_logic_vector(15 down
     end add;
 --------------
 signal op: std_logic_vector(2 downto 0) :="000";
+signal alu_a, alu_b: std_logic_vector(15 downto 0) :="0000000000000000";
 
 begin
 alu1: process(clk,alu_a,alu_b,op) is
@@ -90,18 +91,38 @@ end process;
 alu2:process(current_state)
 begin
 	case current_state is
-	when S1|S15|S19 =>
+	when S15|S19 =>
         op <="100";
+		  alu_a<=t0_out;
+		  
+	when S1=>
+		op <="100";
+		alu_a<=pc_out;
+		
 	when S4 =>
 	  op<="010";
-	when S7|S10|S22 =>
+	  alu_a<=t1_out;
+	  alu_b<=t2_out;
+	  
+	when S7|S10 =>
 	  op<="001";
+	  alu_a<=t1_out;
+	  alu_b<=t2_out;
+	  
+	 when S22=>
+	  op<="001";
+	  alu_a<=t0_out;
+	  alu_b<=t2_out;
+	  
 	when S13 =>
 	  op<="110";
+	  alu_a<=t1_out;
 	when S21|S24 =>
 	  op<="101";
+	  alu_a<=t0_out;
 	when others =>
 	  op<="000";
+	  alu_a<="0000000000000000";
 	end case;
 
 end process;
