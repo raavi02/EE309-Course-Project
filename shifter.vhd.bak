@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+ 
+entity shifter is
+	port(
+		A: in std_logic_vector(15 downto 0);
+		sel: in std_logic;
+		B: out std_logic_vector(15 downto 0);
+	);
+end shifter
+
+architecture shift of shifter is
+
+function rot(A: in std_logic_vector(15 downto 0); sel: in std_logic)
+        return std_logic_vector is
+            variable shift : std_logic_vector((15 downto 0):= (others=>'0');
+        begin
+            shift(15 downto 0):= A;
+			if sel = '1' then
+				shift := ((15 downto 7) := shift(8 downto 0), others=>'0');
+			else 
+				shift := ((15 downto 1) := shift(14 downto 0), 0 =>'0');
+			end if;
+        return shift;
+    end rot;
+
+begin
+process(A,B,sel)
+begin
+	B <= rot(A,sel);
+end process;
+end shift;
