@@ -6,7 +6,7 @@ use work.all;
 entity PC is
 	port (d2 : IN STD_LOGIC_VECTOR(15 downto 0);
 				alu_out: IN STD_LOGIC_VECTOR(15 downto 0);
-				current_state : IN STD_LOGIC_VECTOR(5 downto 0);
+				current_state : IN STD_LOGIC_VECTOR(4 downto 0);
 
 				output : OUT STD_LOGIC_VECTOR(15 downto 0);
 				pc_write : OUT STD_LOGIC);
@@ -14,9 +14,9 @@ end PC;
 
 
 architecture beh of PC is
-  constant S1: STD_LOGIC_VECTOR(5 downto 0) := "000001";
-  constant S22: STD_LOGIC_VECTOR(5 downto 0) := "010110";
-  constant S25: STD_LOGIC_VECTOR(5 downto 0) := "011001";
+  constant S1 : std_logic_vector(4 downto 0):= "00001";
+  constant S22: STD_LOGIC_VECTOR(4 downto 0) := "10110";
+  constant S25: STD_LOGIC_VECTOR(4 downto 0) := "11001";
 
   begin
     process (current_state,d2,alu_out)
