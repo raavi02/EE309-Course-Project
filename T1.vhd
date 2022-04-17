@@ -8,7 +8,7 @@ entity Temp1 is
 				Shifter : IN STD_LOGIC_VECTOR(15 downto 0);
 				SE : IN STD_LOGIC_VECTOR(15 downto 0);
 				alu_out : IN STD_LOGIC_VECTOR(15 downto 0);
-				current_state : IN STD_LOGIC_VECTOR(5 downto 0);
+				current_state : IN STD_LOGIC_VECTOR(4 downto 0);
 
 				output : OUT STD_LOGIC_VECTOR(15 downto 0);
 				t1_write : OUT STD_LOGIC);
@@ -16,15 +16,15 @@ end Temp1;
 
 
 architecture beh of Temp1 is
-  constant S3: STD_LOGIC_VECTOR(5 downto 0) := "000011";
-  constant S6: STD_LOGIC_VECTOR(5 downto 0) := "000110";
-  constant S7: STD_LOGIC_VECTOR(5 downto 0) := "000111";
-  constant S10: STD_LOGIC_VECTOR(5 downto 0) := "001010";
-  constant S12: STD_LOGIC_VECTOR(5 downto 0) := "001100";
-  constant S16: STD_LOGIC_VECTOR(5 downto 0) := "010000";
-  constant S17: STD_LOGIC_VECTOR(5 downto 0) := "010001";
-  constant S27: STD_LOGIC_VECTOR(5 downto 0) := "011011";
-  constant S31: STD_LOGIC_VECTOR(5 downto 0) := "011111";
+  constant S3 : std_logic_vector(4 downto 0):= "00011";
+  constant S6: STD_LOGIC_VECTOR(4 downto 0) := "00110";
+  constant S7: STD_LOGIC_VECTOR(4 downto 0) := "00111";
+  constant S10: STD_LOGIC_VECTOR(4 downto 0) := "01010";
+  constant S12: STD_LOGIC_VECTOR(4 downto 0) := "01100";
+  constant S16: STD_LOGIC_VECTOR(4 downto 0) := "10000";
+  constant S17: STD_LOGIC_VECTOR(4 downto 0) := "10001";
+  constant S27: STD_LOGIC_VECTOR(4 downto 0) := "11011";
+  constant S31: STD_LOGIC_VECTOR(4 downto 0) := "11111";
   
 
   begin
