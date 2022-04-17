@@ -8,22 +8,22 @@ entity D3 is
 				t0 : IN STD_LOGIC_VECTOR(15 downto 0);
 				Shifter : IN STD_LOGIC_VECTOR(15 downto 0);
 				PC : IN STD_LOGIC_VECTOR(15 downto 0);
-				current_state : IN STD_LOGIC_VECTOR(5 downto 0);
+				current_state : IN STD_LOGIC_VECTOR(4 downto 0);
 
 				output : OUT STD_LOGIC_VECTOR(15 downto 0));
 end D3;
 
 
 architecture beh of D3 is
-  constant S2: STD_LOGIC_VECTOR(5 downto 0) := "000010";
-  constant S5: STD_LOGIC_VECTOR(5 downto 0) := "000101";
-  constant S9: STD_LOGIC_VECTOR(5 downto 0) := "001001";
-  constant S16: STD_LOGIC_VECTOR(5 downto 0) := "010000";
-  constant S20: STD_LOGIC_VECTOR(5 downto 0) := "010100";
-  constant S23: STD_LOGIC_VECTOR(5 downto 0) := "010111";
-  constant S24: STD_LOGIC_VECTOR(5 downto 0) := "011000";
-  constant S25: STD_LOGIC_VECTOR(5 downto 0) := "011001";
-  constant S32: STD_LOGIC_VECTOR(5 downto 0) := "100000";
+  constant S2 : std_logic_vector(4 downto 0):= "00010";
+  constant S5 : std_logic_vector(4 downto 0):= "00101";
+  constant S9 : std_logic_vector(4 downto 0):= "01001";
+  constant S16: STD_LOGIC_VECTOR(4 downto 0) := "10000";
+  constant S20: STD_LOGIC_VECTOR(4 downto 0) := "10100";
+  constant S23: STD_LOGIC_VECTOR(4 downto 0) := "10111";
+  constant S24: STD_LOGIC_VECTOR(4 downto 0) := "11000";
+  constant S25: STD_LOGIC_VECTOR(4 downto 0) := "11001";
+  constant S32: STD_LOGIC_VECTOR(4 downto 0) := "11110";
   
 
   begin
