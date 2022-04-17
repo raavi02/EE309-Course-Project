@@ -1,0 +1,47 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity alu is
+port( alu_a, alu_b: in std_logic_vector(15 downto 0);
+      alu_c: out std_logic_vector(15 downto 0);
+	sel: in std_logic
+	clk:in std_logic;
+	);
+end alu;
+
+
+architecture func of alu is
+function add(A: in std_logic_vector(15 downto 0); B: in std_logic_vector(15 downto 0))
+        return std_logic_vector is
+            -- Declare "sum" and "carry" variable
+				variable sum,carry: std_logic_vector(7 downto 0) := (others => '0');
+				        
+            -- you can use aggregate to initialize the variables & signals as shown below
+            --    variable variable_name : std_logic_vector(3 downto 0) := (others => '0');
+        begin
+            -- write logic for addition
+            -- Hint: Use for loop
+				sum(0):= A(0) xor B(0);
+				carry(0):= A(0) and B(0);
+				addit: for i in 1 to 3 loop
+				   carry(i) := (A(i) and B(i)) or (carry(i-1) and A(i)) or (carry(i-1) and B(i));
+					sum(i) := carry(i - 1) xor A(i) xor B(i);
+					end loop addit;
+				sum(4) := carry(3);
+				return sum;
+    end add;
+begin
+alu1: process(alu_a, alu_b, clk)
+
+begin
+if falling_edge(clk) then
+if(sel='0') then
+   alu_C <= add(alu_a,alu_b);
+end if;
+if(sel = '1') then
+   alu_C <= alu_a nand alu_b;
+end if;
+end if;
+end process;
+end func;
