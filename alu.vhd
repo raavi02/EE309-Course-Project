@@ -7,13 +7,24 @@ port( alu_a, alu_b: in std_logic_vector(15 downto 0);
       alu_c: out std_logic_vector(15 downto 0);
 		carry_flag,zero_flag: out std_logic;
 	clk: in std_logic;
-	selop: in std_logic_vector(1 downto 0);
-	cop:in std_logic_vector(1 downto 0)
+	current_state : in std_logic_vector(4 downto 0)
 	);
 end alu;
 
 
 architecture func of alu is
+  constant S1 : std_logic_vector(4 downto 0):= "00001";
+  constant S4 : std_logic_vector(4 downto 0):= "00100";
+  constant S7 : std_logic_vector(4 downto 0):= "00111";
+  constant S10 : std_logic_vector(4 downto 0):= "01010";
+  constant S13: STD_LOGIC_VECTOR(4 downto 0) := "01101";
+  constant S15: STD_LOGIC_VECTOR(4 downto 0) := "01111";
+  constant S18: STD_LOGIC_VECTOR(4 downto 0) := "10010";
+  constant S19: STD_LOGIC_VECTOR(4 downto 0) := "10011";
+  constant S21: STD_LOGIC_VECTOR(4 downto 0) := "10101";
+  constant s22 : std_logic_vector(4 downto 0):= "10110";
+  constant S24: STD_LOGIC_VECTOR(4 downto 0) := "11000";
+
 -----------------
 function add(A: in std_logic_vector(15 downto 0); B: in std_logic_vector(15 downto 0))
         return std_logic_vector is
@@ -35,47 +46,64 @@ function add(A: in std_logic_vector(15 downto 0); B: in std_logic_vector(15 down
 				return sum;
     end add;
 --------------
+signal op: std_logic_vector(2 downto 0) :="000";
+
 begin
-alu1: process(clk,alu_a,alu_b,selop, cop) is
+alu1: process(clk,alu_a,alu_b,op) is
 variable sum: std_logic_vector(16 downto 0);
 variable temp: std_logic_vector(15 downto 0);
-variable subb: std_logic_vector(16 downto 0);
-variable c:std_logic;
+variable subb,add1: std_logic_vector(15 downto 0);
 begin
 if falling_edge(clk) then
-sum := add(alu_a,alu_b);
-if(selop="00") then
+if(op = "000") then
+   temp := alu_a;
+elsif(op="001") then
+   sum := add(alu_a,alu_b);
    temp := sum(15 downto 0);
 	carry_flag <= sum(16);
 	--take care of carry
-end if;
-if(selop = "01") then
+elsif(op = "010") then
    temp := alu_a nand alu_b;
-end if;
-if(selop = "10") then
+elsif(op = "011") then
    temp := alu_a and alu_b;
-end if;
-if(cop = "00") then
-   temp := alu_a xor "0000000000000001";
-end if;
-if(cop = "01") then
-   c:= '0';
-	subbit: for i in 0 to 15 loop
-		temp(i):= alu_a(i) xor '1' xor c;
-		c:= alu_a(i) and '1';
-		end loop;
-end if;
-if(cop = "10") then
+elsif(op = "100") then
+   add1:= "0000000000000001";
+   sum := add(alu_a,add1);
+	temp := sum(15 downto 0);
+elsif(op = "101") then
+  subb :="1111111111111111";
+  sum := add(alu_a,subb);
+  temp := sum(15 downto 0);
+elsif(op = "110") then
    temp := alu_a and "1000000000000000";
 end if;
 
 
-
 if (to_integer(unsigned(temp)) = 0) then
 zero_flag <= '1';
-
 end if;
 alu_C <= temp;
+
 end if;
 end process;
+
+alu2:process(current_state)
+begin
+	case current_state is
+	when S1|S15|S19 =>
+        op <="100";
+	when S4 =>
+	  op<="010";
+	when S7|S10|S22 =>
+	  op<="001";
+	when S13 =>
+	  op<="110";
+	when S21|S24 =>
+	  op<="101";
+	when others =>
+	  op<="000";
+	end case;
+
+end process;
+
 end architecture;
