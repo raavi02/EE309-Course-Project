@@ -14,17 +14,17 @@ end Temp0;
 
 
 architecture beh of Temp0 is
-  constant S1: STD_LOGIC_VECTOR(5 downto 0) := "000001";
-  constant S4: STD_LOGIC_VECTOR(5 downto 0) := "000101";
-  constant S7: STD_LOGIC_VECTOR(5 downto 0) := "000111";
-  constant S10: STD_LOGIC_VECTOR(5 downto 0) := "001010";
-  constant S13: STD_LOGIC_VECTOR(5 downto 0) := "001101";
-  constant S14: STD_LOGIC_VECTOR(5 downto 0) := "001110";
-  constant S15: STD_LOGIC_VECTOR(5 downto 0) := "001111";
-  constant S18: STD_LOGIC_VECTOR(5 downto 0) := "010010";
-  constant S19: STD_LOGIC_VECTOR(5 downto 0) := "010011";
-  constant S21: STD_LOGIC_VECTOR(5 downto 0) := "010101";
-  constant S24: STD_LOGIC_VECTOR(5 downto 0) := "011000";
+  constant S1 : std_logic_vector(4 downto 0):= "00001";
+  constant S4 : std_logic_vector(4 downto 0):= "00100";
+  constant S7 : std_logic_vector(4 downto 0):= "00111";
+  constant S10 : std_logic_vector(4 downto 0):= "01010";
+  constant S13: STD_LOGIC_VECTOR(4 downto 0) := "01101";
+  constant S14: STD_LOGIC_VECTOR(4 downto 0) := "01110";
+  constant S15: STD_LOGIC_VECTOR(4 downto 0) := "01111";
+  constant S18: STD_LOGIC_VECTOR(4 downto 0) := "10010";
+  constant S19: STD_LOGIC_VECTOR(4 downto 0) := "10011";
+  constant S21: STD_LOGIC_VECTOR(4 downto 0) := "10101";
+  constant S24: STD_LOGIC_VECTOR(4 downto 0) := "11000";
 
   begin
     process (current_state, d3, alu_out)
