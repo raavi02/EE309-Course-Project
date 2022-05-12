@@ -1,0 +1,512 @@
+# Reading pref.tcl
+# do DUT_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/IIT/EE309/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/DUT.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:36 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/DUT.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DUT
+# -- Compiling architecture DutWrap of DUT
+# End time: 18:47:36 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/i_mem.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:36 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/i_mem.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity i_mem
+# -- Compiling architecture beh of i_mem
+# End time: 18:47:37 on May 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/d_mem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:37 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/d_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity d_mem
+# -- Compiling architecture beh of d_mem
+# End time: 18:47:37 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/T2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:37 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/T2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Temp2
+# -- Compiling architecture beh of Temp2
+# End time: 18:47:37 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/T1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:37 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/T1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Temp1
+# -- Compiling architecture beh of Temp1
+# End time: 18:47:37 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/T0.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:37 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/T0.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Temp0
+# -- Compiling architecture beh of Temp0
+# End time: 18:47:37 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/SE10.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:37 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/SE10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SE10
+# -- Compiling architecture se of SE10
+# End time: 18:47:38 on May 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/SE7.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:38 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/SE7.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SE7
+# -- Compiling architecture se of SE7
+# End time: 18:47:38 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/PC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:38 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/PC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PC
+# -- Compiling architecture beh of PC
+# End time: 18:47:38 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/IR.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:38 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/IR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity IR
+# -- Compiling architecture beh of IR
+# End time: 18:47:38 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/D3.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:38 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/D3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity D3
+# -- Compiling architecture beh of D3
+# End time: 18:47:38 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/A2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:38 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/A2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity A2
+# -- Compiling architecture beh of A2
+# End time: 18:47:39 on May 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/A1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:39 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/A1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity A1
+# -- Compiling architecture beh of A1
+# End time: 18:47:39 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/A3.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:39 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/A3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity A3
+# -- Compiling architecture beh of A3
+# End time: 18:47:39 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/register_16.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:39 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/register_16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_16
+# -- Compiling architecture beh of register_16
+# End time: 18:47:39 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/alu.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:39 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture func of alu
+# End time: 18:47:39 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/shifter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:39 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shifter
+# -- Compiling architecture shift of shifter
+# End time: 18:47:40 on May 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/sign_extend.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:40 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/sign_extend.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sign_extend
+# -- Compiling architecture se of sign_extend
+# End time: 18:47:40 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/memory.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:40 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 18:47:40 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/count.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:40 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/count.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity count
+# -- Compiling architecture beh of count
+# End time: 18:47:40 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/fsm_controller.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:40 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/fsm_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fsm_controller
+# -- Compiling architecture state_machine of fsm_controller
+# End time: 18:47:41 on May 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/register_file.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:41 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture beh of register_file
+# -- Loading entity register_16
+# End time: 18:47:41 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/datapath.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:41 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity datapath
+# -- Compiling architecture struct of datapath
+# -- Loading entity register_file
+# -- Loading entity A3
+# -- Loading entity A2
+# -- Loading entity A1
+# -- Loading entity D3
+# -- Loading entity shifter
+# -- Loading entity Temp0
+# -- Loading entity Temp1
+# -- Loading entity Temp2
+# -- Loading entity d_mem
+# -- Loading entity i_mem
+# -- Loading entity alu
+# -- Loading entity PC
+# -- Loading entity IR
+# -- Loading entity count
+# -- Loading entity SE10
+# -- Loading entity SE7
+# End time: 18:47:41 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/IITB_RISC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:41 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/IITB_RISC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity IITB_RISC
+# -- Compiling architecture f of IITB_RISC
+# -- Loading entity fsm_controller
+# End time: 18:47:41 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/Testbench.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:41 on May 10,2022
+# vcom -reportprogress 300 -93 -work work D:/IIT/EE309/EE309-Course-Project/EE309-Course-Project-master/Testbench.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Testbench
+# -- Compiling architecture Behave of Testbench
+# End time: 18:47:41 on May 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs=""+acc"" Testbench 
+# Start time: 18:47:42 on May 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(behave)
+# Loading work.dut(dutwrap)
+# Loading ieee.numeric_std(body)
+# Loading work.iitb_risc(f)
+# Loading work.datapath(struct)
+# Loading work.register_file(beh)
+# Loading work.register_16(beh)
+# Loading work.a3(beh)
+# Loading work.a2(beh)
+# Loading work.a1(beh)
+# Loading work.d3(beh)
+# Loading work.shifter(shift)
+# Loading work.temp0(beh)
+# Loading work.temp1(beh)
+# Loading work.temp2(beh)
+# Loading work.d_mem(beh)
+# Loading work.i_mem(beh)
+# Loading work.alu(func)
+# Loading work.pc(beh)
+# Loading work.ir(beh)
+# Loading work.count(beh)
+# Loading work.se10(se)
+# Loading work.se7(se)
+# Loading work.fsm_controller(state_machine)
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/dut_instance/add_instance/dummy_output has no driver.
+# This port will contribute value (U) to the signal network.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/datapath1/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/datapath1/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/datapath1/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/IMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1030 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/IMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2060 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/IMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2060 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12360 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22660 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 32960 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 43260 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 53560 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 63860 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 74160 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 84460 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 94760 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 105060 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 115360 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 125660 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 135960 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Note: SUCCESS, all tests passed.
+#    Time: 146260 ns  Iteration: 0  Instance: /testbench
+add wave -position insertpoint  \
+sim:/testbench/dut_instance/add_instance/controller/output
+add wave -position insertpoint  \
+sim:/testbench/dut_instance/add_instance/datapath1/RF/registers
+add wave -position insertpoint  \
+sim:/testbench/dut_instance/add_instance/datapath1/current_state
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/dut_instance/add_instance/dummy_output has no driver.
+# This port will contribute value (U) to the signal network.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/datapath1/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/datapath1/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/datapath1/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/IMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1030 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/IMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2060 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/IMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2060 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12360 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22660 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 32960 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 43260 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 53560 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 63860 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 74160 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 84460 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 94760 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 105060 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 115360 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 125660 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 135960 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Note: SUCCESS, all tests passed.
+#    Time: 146260 ns  Iteration: 0  Instance: /testbench
+add wave -position insertpoint  \
+sim:/testbench/dut_instance/add_instance/controller/opcode
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/dut_instance/add_instance/dummy_output has no driver.
+# This port will contribute value (U) to the signal network.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/datapath1/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/datapath1/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/datapath1/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/IMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1030 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/IMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2060 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/IMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2060 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12360 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22660 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 32960 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 43260 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 53560 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 63860 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 74160 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 84460 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 94760 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 105060 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 115360 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 125660 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 135960 ns  Iteration: 1  Instance: /testbench/dut_instance/add_instance/datapath1/ALU
+# ** Note: SUCCESS, all tests passed.
+#    Time: 146260 ns  Iteration: 0  Instance: /testbench
+# End time: 18:50:53 on May 10,2022, Elapsed time: 0:03:11
+# Errors: 0, Warnings: 21
